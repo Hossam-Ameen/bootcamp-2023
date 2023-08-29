@@ -38,3 +38,6 @@ def update_student(request, id):
     studnet_serializer.is_valid(raise_exception=True)
     studnet_serializer.save()
     return Response(studnet_serializer.data, status=status.HTTP_200_OK)
+
+
+
